@@ -1,0 +1,71 @@
+@import "typeface-yekan";
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --navy-primary: #0b132b;
+    --navy-slate: #1c2541;
+    --champagne: #c5a880;
+    --champagne-light: #f5efe6;
+    --champagne-dark: #8a6d44;
+    --surface-base: #ffffff;
+    --surface-secondary: #f8f9fa;
+    --border-hairline: rgba(11, 19, 43, 0.08);
+    --text-slate: #5a6578;
+    --text-heading: #0b132b;
+  }
+
+  *, html, body, button, input, select, textarea, h1, h2, h3, h4, h5, h6, p, span, a, label, div {
+    font-family: 'Yekan', 'IRANYekan', 'Yekan Bakh', Tahoma, system-ui, -apple-system, BlinkMacSystemFont, sans-serif !important;
+  }
+
+  body {
+    background-color: var(--surface-secondary);
+    color: #191c1d;
+    overflow-x: hidden;
+    line-height: 1.75;
+  }
+}
+
+/* Glassmorphism Navigation with rounded borders */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(11, 19, 43, 0.08);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(10px);
+}
+
+/* Rounded Cards & Frames */
+.prestige-card {
+  border-radius: 1.25rem; /* 20px */
+  border: 1px solid rgba(11, 19, 43, 0.08);
+  box-shadow: 0 10px 30px -10px rgba(11, 19, 43, 0.06);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.prestige-card:hover {
+  transform: translateY(-2px);
+  border-color: #c5a880;
+  box-shadow: 0 16px 40px -12px rgba(11, 19, 43, 0.1);
+}
+
+/* Subtle elevation */
+.prestige-shadow {
+  box-shadow: 0 16px 40px -12px rgba(11, 19, 43, 0.07), 0 2px 6px -1px rgba(11, 19, 43, 0.03);
+}
+
+/* Smooth range slider track */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background: #c5a880;
+  cursor: ew-resize;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}

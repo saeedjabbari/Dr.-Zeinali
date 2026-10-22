@@ -1,0 +1,604 @@
+<!DOCTYPE html><html class="scroll-smooth" dir="rtl" lang="fa"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>دکتر وحید زینالی | چهره اصیل شما</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200;300;400;500;600;700;800;900&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            sage: {
+              50: "#F2FAF9",
+              100: "#E1F4F1",
+              200: "#C3E8E3",
+              300: "#96D4CC",
+              600: "#1E877E",
+              700: "#1B7A72",
+              800: "#145E58",
+              900: "#0D4744",
+            },
+            sand: {
+              50: "#FDFCF9",
+              100: "#FAF8F5",
+              200: "#F4EFEA",
+              300: "#EBE3D8",
+              500: "#C2A888",
+              800: "#5E4D3B",
+            },
+            surface: "#FAF8F5",
+          },
+          fontFamily: {
+            sans: ['Vazirmatn', 'Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background-color: #FAF8F5;
+      color: #162624;
+      overflow-x: hidden;
+    }
+    .editorial-serif {
+      font-feature-settings: "ss01", "ss02";
+      letter-spacing: -0.035em;
+    }
+    .glass-dock {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 16px 40px -10px rgba(13, 71, 68, 0.12);
+    }
+    .pill-active {
+      background-color: #145E58;
+      color: #ffffff;
+      box-shadow: 0 6px 18px -4px rgba(20, 94, 88, 0.35);
+    }
+    .tab-content {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .tab-content.active {
+      display: block;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="bg-surface text-slate-800 antialiased selection:bg-sage-200 selection:text-sage-900 pb-32">
+<!-- TOP MINIMAL PRESTIGE BANNER -->
+<aside class="w-full bg-[#145E58] text-white/90 text-[11px] py-1.5 px-6 font-light">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+<span class="tracking-wide">استادیار دانشگاه علوم پزشکی • پیشگام رینوپلاستی محافظتی و بدون تامپون</span>
+</div>
+<div class="hidden sm:flex items-center gap-6 text-white/80">
+<span class="">پذیرش انفرادی و محرمانه در جردن تهران</span>
+<span class="text-white/40">|</span>
+<span class="font-mono text-xs" dir="ltr">+98 (21) 8800 0000</span>
+</div>
+</div>
+</aside>
+<!-- FLOATING DOCK HEADER (STRICT MAX 4 MENU LINKS) -->
+<header class="sticky top-4 z-40 px-4 sm:px-6">
+<div class="max-w-5xl mx-auto h-16 rounded-full glass-dock border border-sage-200/60 px-5 sm:px-8 flex items-center justify-between">
+<!-- Doctor Monogram & Signature -->
+<a class="flex items-center gap-3" href="#">
+<div class="w-9 h-9 rounded-full bg-sage-800 flex items-center justify-center text-white font-bold text-sm shadow-sm">
+          Z
+        </div>
+<div class="flex flex-col text-right">
+<span class="font-extrabold text-sm text-slate-900 leading-none">دکتر وحید زینالی</span>
+<span class="text-[10px] text-slate-500 font-normal mt-0.5">کلینیک آرامش و تناسب چهره</span>
+</div>
+</a>
+<!-- 4 Strict Essential Links -->
+<nav class="hidden md:flex items-center gap-7 text-xs font-semibold text-slate-600">
+<a class="hover:text-sage-800 transition-colors" href="#canvas" onclick="switchStage('anxieties')">دغدغه‌های بیمار</a>
+<a class="hover:text-sage-800 transition-colors" href="#canvas" onclick="switchStage('journey')">تجربه درمان</a>
+<a class="hover:text-sage-800 transition-colors" href="#canvas" onclick="switchStage('sanctuary')">محیط آرام کلینیک</a>
+<a class="hover:text-sage-800 transition-colors" href="#canvas" onclick="switchStage('cases')">رویکرد انسانی</a>
+</nav>
+<!-- Micro Direct Trigger -->
+<a class="text-xs font-bold text-sage-800 bg-sage-100 hover:bg-sage-200 px-4 py-2 rounded-full transition-all flex items-center gap-1.5" href="#dialogue-stage">
+<span class="material-symbols-outlined text-[15px]">calendar_today</span>
+<span class="">رزرو گفتگو</span>
+</a>
+</div>
+</header>
+<!-- HERO SANCTUARY: POIGNANT & RADICALLY HUMAN -->
+<section class="relative pt-12 pb-16 lg:pt-16 lg:pb-24 px-4 sm:px-6">
+<div class="max-w-7xl mx-auto"><!-- Top Sub-Badge -->
+<div class="flex items-center justify-start mb-6">
+  <span class="px-3.5 py-1.5 rounded-full bg-sage-100/90 border border-sage-200/80 text-sage-800 text-[11px] font-semibold tracking-wider flex items-center gap-2 shadow-sm">
+    <span class="w-1.5 h-1.5 rounded-full bg-sage-700 animate-ping"></span>
+    طبابت انسان‌محور • بدون قالب‌های صنعتی و کلیشه‌ای
+  </span>
+</div>
+
+<!-- Split Hero Grid: Typography & CTAs vs Visual Composition -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center text-right">
+  <!-- Editorial Text Column (Col 7) -->
+  <div class="lg:col-span-7 flex flex-col justify-center">
+    <h1 class="editorial-serif text-3xl sm:text-5xl lg:text-[62px] font-black text-slate-900 leading-[1.18] mb-6 tracking-tight">
+      چهره اصیل شما؛
+      <span class="block mt-2 text-transparent bg-clip-text bg-gradient-to-l from-sage-900 via-sage-700 to-teal-700">
+        در کمال آرامش و تنفس
+      </span>
+    </h1>
+    
+    <p class="text-slate-600 text-sm sm:text-base lg:text-lg font-light leading-relaxed mb-8 max-w-2xl">
+      «جراحی بینی مسابقه باریک‌کردن استخوان نیست؛ بازگرداندن توازن زیستی و حس آزادی به تنفس شماست. در این فضا، هیچ اصراری به عمل وجود ندارد.»
+    </p>
+
+    <!-- Primary & Secondary CTAs -->
+    <div class="flex flex-wrap items-center gap-3 sm:gap-4 mb-10">
+      <a href="#dialogue-stage" class="px-7 py-3.5 rounded-full bg-sage-800 hover:bg-sage-900 text-white text-xs sm:text-sm font-bold shadow-md hover:shadow-xl transition-all flex items-center gap-2">
+        <span class="">درخواست مشاوره اختصاصی</span>
+        <span class="material-symbols-outlined text-base">arrow_back</span>
+      </a>
+      <a href="#canvas" onclick="switchStage('journey')" class="px-6 py-3.5 rounded-full bg-white hover:bg-sage-50 text-slate-700 border border-sage-200/80 text-xs sm:text-sm font-bold transition-all flex items-center gap-2">
+        <span class="material-symbols-outlined text-base text-sage-700">conversion_path</span>
+        <span class="">رویکرد و فلسفه جراحی</span>
+      </a>
+    </div>
+
+    <!-- Micro Trust Metric Badges -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-4 border-t border-sage-200/60">
+      <div class="p-3.5 rounded-2xl bg-white border border-sage-100 flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-sage-50 text-sage-800 flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-lg">timer</span>
+        </div>
+        <div>
+          <div class="text-xs font-bold text-slate-900">۴۵ دقیقه</div>
+          <div class="text-[10px] text-slate-500 font-light mt-0.5">گفتگوی مستقیم با پزشک</div>
+        </div>
+      </div>
+      <div class="p-3.5 rounded-2xl bg-white border border-sage-100 flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-sand-100 text-sand-800 flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-lg">healing</span>
+        </div>
+        <div>
+          <div class="text-xs font-bold text-slate-900">بدون تامپون</div>
+          <div class="text-[10px] text-slate-500 font-light mt-0.5">تکنیک تنفس آزاد بلافاصله</div>
+        </div>
+      </div>
+      <div class="p-3.5 rounded-2xl bg-white border border-sage-100 flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-lg">airwave</span>
+        </div>
+        <div>
+          <div class="text-xs font-bold text-slate-900">حفظ دریچه‌ها</div>
+          <div class="text-[10px] text-slate-500 font-light mt-0.5">رینوپلاستی محافظتی نوین</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Visual Sanctuary Showcase (Col 5) -->
+  <div class="lg:col-span-5 relative">
+    <div class="relative bg-white p-4 rounded-[2.5rem] border border-sage-100 shadow-xl overflow-hidden group">
+      <!-- Doctor Main Portrait -->
+      <div class="relative w-full aspect-[4/4.6] rounded-[2rem] overflow-hidden bg-slate-900">
+        <img alt="دکتر وحید زینالی - جراح و متخصص گوش، حلق و بینی" class="w-full h-full object-cover object-top group-hover:scale-102 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACsWLVx8pcaiQ3vbWBglpVbfpZB1mIGMB_F_3NLS54ijHv5Bn4N6idLeC9a97s0ZrzWHruMgpVS2o3PdTt-oDSdmUjWOGfg7sP7uipXFUsn5Wl3A3RIS1K7mSAYJ3j1NqQNGkVgtI4NgyMB-IbudsTMFOXwqJQGt4JdzD1jl4w-en10IYH-l_uh6HiOr0miVh4R2t0Hc-NRnbIjYUV5k8OEpzwNkifOk4XWV4TMrHRk635GO1JkH9ElKNeBBbxFhIM">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-transparent to-transparent"></div>
+        <div class="absolute bottom-4 right-4 left-4 text-white text-right">
+          <span class="text-[10px] tracking-wider uppercase bg-white/20 backdrop-blur-md px-2.5 py-1 rounded-full font-medium inline-block mb-1.5">Dr. Vahid Zeinali</span>
+          <h2 class="text-lg sm:text-xl font-bold leading-tight">دکتر وحید زینالی</h2>
+          <p class="text-[11px] text-slate-300 font-light mt-1">استادیار دانشگاه علوم پزشکی • پیشگام رینوپلاستی محافظتی</p>
+        </div>
+      </div>
+
+      <!-- Clinic Sanctuary Preview Card Floating at the bottom -->
+      <div class="mt-4 p-3.5 rounded-[1.6rem] bg-sand-50/90 border border-sand-200/80 flex items-center gap-3.5 text-right transition-colors hover:bg-sand-100">
+        <div class="w-16 h-16 rounded-xl overflow-hidden shrink-0 shadow-sm border border-white">
+          <img alt="فضای کلینیک آرام دکتر زینالی" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VuwSEAlCZS9HHJCjmay-cyS-GqQzcigGM63VK9A3iYYEO94Xidz9X-2UjOMLwQa4aBrLiY8MhkOxPXmcuY2heWiP5VpHNtbez9MYnmfIvzSAMpG0Zla3Lcm-wWaSFGg_hI80L5eYkcxY98eOoju8kv4mboQyozA0YcQ_bdcaq-s850mcDLIAXmj0F4mBYzgWKRmZuSCESUTIB1O922QX-iTiS34t_RuOb3MlSEYGpJRkGtNAAHfb1H">
+        </div>
+        <div class="flex-1">
+          <div class="flex items-center gap-1.5 text-sage-800 text-xs font-bold">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+            <span class="">محیط مشاوره آرام و خصوصی</span>
+          </div>
+          <p class="text-[11px] text-slate-500 font-light mt-1 leading-snug">پذیرش تک‌نفره در فضایی صمیمی، آرامش‌بخش و بدون استرس</p>
+        </div>
+        <a href="#canvas" onclick="switchStage('sanctuary')" class="w-9 h-9 rounded-xl bg-white text-sage-800 flex items-center justify-center hover:bg-sage-800 hover:text-white transition-all shrink-0 shadow-sm">
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div></div>
+</section>
+<!-- INTERACTIVE CLINICAL CANVAS (CENTRAL SEGMENTED SWITCHER) -->
+<main class="max-w-6xl mx-auto px-4 sm:px-6" id="canvas">
+<!-- Stage Header & Pill Segmented Switcher -->
+<div class="text-center pt-8 pb-8 border-t border-sage-200/60">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sand-100 text-sand-800 text-[11px] font-bold mb-3">
+<span class="material-symbols-outlined text-[15px]">touch_app</span>
+<span class="">میز تعاملی کاوش بالینی</span>
+</div>
+<h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+        آگاهی کامل، پیش از هر تصمیم
+      </h2>
+<p class="text-slate-500 text-xs sm:text-sm mt-1 max-w-lg mx-auto">
+        بخش مورد نظر خود را برای مطالعه شفاف و بدون تعارف انتخاب کنید:
+      </p>
+<!-- THE 4-PILL STAGE CONTROLLER -->
+<div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mt-6 p-1.5 bg-white rounded-full border border-sage-200/80 shadow-sm max-w-2xl mx-auto">
+<button class="stage-btn pill-active flex-1 min-w-[120px] py-2.5 px-4 rounded-full text-xs font-bold transition-all flex items-center justify-center gap-1.5" id="btn-anxieties" onclick="switchStage('anxieties')">
+<span class="material-symbols-outlined text-[17px]">psychology</span>
+<span class="">پاسخ به ترس‌ها</span>
+</button>
+<button class="stage-btn text-slate-600 hover:text-sage-800 hover:bg-sage-50 flex-1 min-w-[120px] py-2.5 px-4 rounded-full text-xs font-bold transition-all flex items-center justify-center gap-1.5" id="btn-journey" onclick="switchStage('journey')">
+<span class="material-symbols-outlined text-[17px]">conversion_path</span>
+<span class="">سفر مراجع (۴ گام)</span>
+</button>
+<button class="stage-btn text-slate-600 hover:text-sage-800 hover:bg-sage-50 flex-1 min-w-[120px] py-2.5 px-4 rounded-full text-xs font-bold transition-all flex items-center justify-center gap-1.5" id="btn-sanctuary" onclick="switchStage('sanctuary')">
+<span class="material-symbols-outlined text-[17px]">spa</span>
+<span class="">محیط آرام کلینیک</span>
+</button>
+<button class="stage-btn text-slate-600 hover:text-sage-800 hover:bg-sage-50 flex-1 min-w-[120px] py-2.5 px-4 rounded-full text-xs font-bold transition-all flex items-center justify-center gap-1.5" id="btn-cases" onclick="switchStage('cases')">
+<span class="material-symbols-outlined text-[17px]">auto_stories</span>
+<span class="">پرونده‌های واقعی</span>
+</button>
+</div>
+</div>
+<!-- CANVAS VIEW 1: ANXIETIES (DEFAULT ACTIVE) -->
+<div class="tab-content active mt-6" id="view-anxieties">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-right">
+<!-- Fear 1 -->
+<article class="p-8 rounded-[2rem] bg-white border border-sage-100 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-sage-50 text-sage-800 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl">airwave</span>
+</div>
+<div class="text-[11px] font-bold text-sand-800 uppercase tracking-wide">ترس از دست رفتن تنفس</div>
+<h3 class="text-base font-bold text-slate-900 mt-2 mb-3">«آیا بعد از عمل صدای خس‌خس خواهم داشت؟»</h3>
+<p class="text-xs text-slate-600 leading-relaxed font-light">
+              در جراحی نوین محافظتی (Preservation Rhinoplasty)، به جای قطع غضروف‌ها، مجاری تنفسی داخلی استحکام بیشتری پیدا می‌کنند. ۹۴٪ مراجعین ما گزارش داده‌اند که تنفس پس از بهبودی، سبک‌تر و آزادتر از پیش از جراحی است.
+            </p>
+</div>
+<div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between text-[11px] text-sage-800 font-semibold">
+<span class="">تضمین کتبی حفظ عملکرد دریچه‌ها</span>
+<span class="material-symbols-outlined text-base">verified</span>
+</div>
+</article>
+<!-- Fear 2 -->
+<article class="p-8 rounded-[2rem] bg-white border border-sage-100 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-sand-100 text-sand-800 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl">sentiment_dissatisfied</span>
+</div>
+<div class="text-[11px] font-bold text-sand-800 uppercase tracking-wide">ترس از مصنوعی شدن و قوس فانتزی</div>
+<h3 class="text-base font-bold text-slate-900 mt-2 mb-3">«نمی‌خواهم همه از دور بفهمند جراحی کرده‌ام»</h3>
+<p class="text-xs text-slate-600 leading-relaxed font-light">
+              هدف ما تناسب چهره است نه مُدهای زودگذر اینستاگرامی. پایه‌های غضروفی با روش اسکلتی ثابت می‌شوند تا ارتفاع و زاویه نوک بینی در گذر زمان تغییر نکند و طبیعی بودن آن ماندگار باشد.
+            </p>
+</div>
+<div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between text-[11px] text-sand-800 font-semibold">
+<span class="">ممنوعیت فرم‌های عروسکی و زاویه‌دار</span>
+<span class="material-symbols-outlined text-base">check_circle</span>
+</div>
+</article>
+<!-- Fear 3 -->
+<article class="p-8 rounded-[2rem] bg-white border border-sage-100 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-800 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl">healing</span>
+</div>
+<div class="text-[11px] font-bold text-sand-800 uppercase tracking-wide">ترس از درد، تامپون و بیهوشی</div>
+<h3 class="text-base font-bold text-slate-900 mt-2 mb-3">«خاطرات تلخ دوستانم از تامپون کشیدن من را ترسانده»</h3>
+<p class="text-xs text-slate-600 leading-relaxed font-light">
+              تامپون‌های نواری دردناک سال‌هاست در کلینیک ما حذف شده‌اند. ما تنها از ورقه‌های فوق‌نازک سیلیکونی راهبُر استفاده می‌کنیم که کشیدن آن‌ها طی چند ثانیه و بدون هیچ‌گونه دردی انجام می‌پذیرد.
+            </p>
+</div>
+<div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between text-[11px] text-emerald-800 font-semibold">
+<span class="">دستگاه پیزوسرجری اولتراسونیک بدون کوفتگی</span>
+<span class="material-symbols-outlined text-base">shield</span>
+</div>
+</article>
+</div>
+<!-- Human Statement from Doctor -->
+<div class="mt-8 p-6 rounded-3xl bg-sage-50/80 border border-sage-200/80 flex flex-col sm:flex-row items-center gap-5 text-right">
+<div class="w-14 h-14 rounded-2xl overflow-hidden shrink-0 border border-white shadow-sm">
+<img alt="دکتر وحید زینالی" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANAoMi6zMug1TwFBZZgHhWJdP3aweCQijvaaPEb-c-jjrfWiqRb4zncZxQRlIgJaPU6lXXxjRqz_vlxtyxRlkydwfwFuzhLbbgqP9J5Oeea_5tOO-DcUTWm2usyKHkjw-JgdLgvcZP3hpEQe-3U3K1a7TvNv81ax_v-iE2Lx57GBFasHN-wZdrYfmUji0Dw3UZKVAc4svh9o60QGFF7-JcAKevR60i-FyQzQIue5Qq_5ZsHMYWF-s3UZGCyhviBUKI">
+</div>
+<div class="flex-1">
+<div class="text-xs font-bold text-slate-900">«اگر بدانم عمل به سلامت شما کمک نمی‌کند، صراحتاً نه می‌گویم.»</div>
+<p class="text-[11px] text-slate-600 mt-1 font-light leading-relaxed">
+            جلسه مشاوره برای متقاعد کردن شما نیست؛ بلکه محلی برای ارزیابی علمی و صادقانه است تا با قلبی آرام تصمیم بگیرید.
+          </p>
+</div>
+<a class="px-5 py-2.5 rounded-full bg-sage-800 text-white text-xs font-bold hover:bg-sage-900 transition-colors shrink-0" href="#dialogue-stage">
+          درخواست گفتگوی اختصاصی
+        </a>
+</div>
+</div>
+<!-- CANVAS VIEW 2: JOURNEY (4 EMPATHIC STEPS) -->
+<div class="tab-content mt-6" id="view-journey">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-5 text-right">
+<div class="p-6 rounded-[2rem] bg-white border border-sage-100 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-9 h-9 rounded-xl bg-sage-100 text-sage-900 text-xs font-black flex items-center justify-center mb-4">
+              ۰۱
+            </div>
+<h4 class="text-sm font-bold text-slate-900 mb-2">گفتگوی ۴۵ دقیقه‌ای</h4>
+<p class="text-xs text-slate-600 font-light leading-relaxed">
+              بررسی سی‌تی‌اسکن مجاری تنفس، آنالیز خطوط صورت و شنیدن تک‌تک حساسیت‌های شخصی شما توسط خود پزشک.
+            </p>
+</div>
+<div class="mt-6 pt-3 border-t border-slate-100 text-[10px] text-sage-700 font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">nest_clock_farsight_analog</span>
+<span class="">بدون شتاب و منشی‌محوری</span>
+</div>
+</div>
+<div class="p-6 rounded-[2rem] bg-white border border-sage-100 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-9 h-9 rounded-xl bg-sand-200 text-sand-800 text-xs font-black flex items-center justify-center mb-4">
+              ۰۲
+            </div>
+<h4 class="text-sm font-bold text-slate-900 mb-2">چکاپ تنفس و طراحی</h4>
+<p class="text-xs text-slate-600 font-light leading-relaxed">
+              شبیه‌سازی واقع‌بینانه بر پایه اصول ارگونومیک چهره بدون دادن امیدهای واهی و کاذب فتوشاپی.
+            </p>
+</div>
+<div class="mt-6 pt-3 border-t border-slate-100 text-[10px] text-sand-800 font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">biomedical</span>
+<span class="">ارزیابی عملکرد سینوس‌ها</span>
+</div>
+</div>
+<div class="p-6 rounded-[2rem] bg-white border border-sage-100 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-800 text-xs font-black flex items-center justify-center mb-4">
+              ۰۳
+            </div>
+<h4 class="text-sm font-bold text-slate-900 mb-2">جراحی اولتراسونیک</h4>
+<p class="text-xs text-slate-600 font-light leading-relaxed">
+              انجام متد بسته و ظریف در بیمارستان فوق تخصصی با تیم بیهوشی دانشگاهی و ترخیص همان روز.
+            </p>
+</div>
+<div class="mt-6 pt-3 border-t border-slate-100 text-[10px] text-emerald-700 font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">favorite</span>
+<span class="">بدون خونریزی و بدون تامپون</span>
+</div>
+</div>
+<div class="p-6 rounded-[2rem] bg-white border border-sage-100 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-9 h-9 rounded-xl bg-teal-100 text-teal-800 text-xs font-black flex items-center justify-center mb-4">
+              ۰۴
+            </div>
+<h4 class="text-sm font-bold text-slate-900 mb-2">مراقبت اختصاصی یک‌ساله</h4>
+<p class="text-xs text-slate-600 font-light leading-relaxed">
+              برداشتن اسپلینت بعد از ۷ روز با آرامش کامل و معاینات دوره‌ای در ماه ۱، ۳، ۶ و پایان سال اول.
+            </p>
+</div>
+<div class="mt-6 pt-3 border-t border-slate-100 text-[10px] text-teal-700 font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">support_agent</span>
+<span class="">خط تماس مستقیم پشتیبانی ۲۴ ساعته</span>
+</div>
+</div>
+</div>
+</div>
+<!-- CANVAS VIEW 3: SANCTUARY & CLINIC ENVIRONMENT -->
+<div class="tab-content mt-6" id="view-sanctuary">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center text-right">
+<div class="lg:col-span-7 rounded-[2.5rem] overflow-hidden border border-sage-100 bg-white shadow-sm p-3">
+<div class="aspect-[16/10] w-full rounded-[2rem] overflow-hidden">
+<img alt="مطب دکتر زینالی با نور طبیعی و چیدمان گرم چوبی" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VuwSEAlCZS9HHJCjmay-cyS-GqQzcigGM63VK9A3iYYEO94Xidz9X-2UjOMLwQa4aBrLiY8MhkOxPXmcuY2heWiP5VpHNtbez9MYnmfIvzSAMpG0Zla3Lcm-wWaSFGg_hI80L5eYkcxY98eOoju8kv4mboQyozA0YcQ_bdcaq-s850mcDLIAXmj0F4mBYzgWKRmZuSCESUTIB1O922QX-iTiS34t_RuOb3MlSEYGpJRkGtNAAHfb1H">
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col justify-center gap-4">
+<span class="text-xs font-bold text-sage-800 tracking-wider">A SANCTUARY FOR CONVERSATION</span>
+<h3 class="text-2xl font-black text-slate-900">فضایی که ضربان قلب شما را آرام می‌کند</h3>
+<p class="text-xs text-slate-600 font-light leading-relaxed">
+            ما محیط کلینیک را بر اساس اصول روان‌شناسی فضا بازطراحی کرده‌ایم. با بهره‌گیری از نور طبیعی روز، رایحه‌های آرامش‌بخش، متریال‌های چوب و سنگ طبیعی و ممنوعیت انتظار طولانی در صف، تجربه‌ای اصیل و محترمانه را فراهم آورده‌ایم.
+          </p>
+<div class="grid grid-cols-2 gap-3 pt-2">
+<div class="p-3.5 rounded-2xl bg-white border border-sage-100 text-right">
+<div class="text-xs font-bold text-slate-800">نوبت‌دهی انفرادی</div>
+<div class="text-[11px] text-slate-500 mt-0.5">احترام کامل به خلوت مراجع</div>
+</div>
+<div class="p-3.5 rounded-2xl bg-white border border-sage-100 text-right">
+<div class="text-xs font-bold text-slate-800">پارکینگ و دسترسی آسان</div>
+<div class="text-[11px] text-slate-500 mt-0.5">آرامش از بدو ورود</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CANVAS VIEW 4: REAL CASES -->
+<div class="tab-content mt-6" id="view-cases">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-right">
+<!-- Case 1 -->
+<div class="p-4 rounded-[2rem] bg-white border border-sage-100 shadow-sm">
+<div class="aspect-[4/3.5] rounded-[1.6rem] overflow-hidden mb-4 relative">
+<img alt="نتیجه رینوپلاستی طبیعی مراجع خانم" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XywJfBLSQ7rrPdvf3XmgLfkL_gZDLCzhjrxyKqvWwKOPYVcd9dSZpU5C79hP35MVWR8xIX0cv9AHIngaSEGVyMwa87iYDaTRIeYuJDkNjy4ZfBgQSSTJ7TrKVCfCt3L8vQ8qywbvZgBPj6YGJsA6VncRZd7QFl_py_DThRrf1pGxXyI59lAQDleR-B_HmE-yo4XiSDODkjINOf6xC0bLoA3J-f2BTWl48zjzHd-Q4E3Td-SxyhvsSF">
+<span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-emerald-600 text-white text-[10px] font-bold">۲ سال بعد از عمل</span>
+</div>
+<div class="text-[11px] font-bold text-sage-800 mb-1">پرونده #۷۲۱ • اصلاح انحراف شدید استخوانی</div>
+<h4 class="text-sm font-bold text-slate-900 mb-2">رینوپلاستی ساختاری با حفظ تناسب چشم‌ها</h4>
+<p class="text-xs text-slate-500 font-light leading-relaxed">
+            «مهم‌ترین خواسته من این بود که کسی نگوید عمل کرده‌ای، فقط بگویند زیباتر شده‌ای. دقیقاً به همان نتیجه رسیدم.»
+          </p>
+</div>
+<!-- Case 2 -->
+<div class="p-4 rounded-[2rem] bg-white border border-sage-100 shadow-sm flex flex-col justify-between">
+<div>
+<div class="aspect-[4/3.5] rounded-[1.6rem] bg-gradient-to-tr from-sage-100 via-sand-50 to-emerald-50 mb-4 flex items-center justify-center p-6 text-center">
+<div>
+<span class="material-symbols-outlined text-4xl text-sage-700 mb-2">balance</span>
+<div class="text-xs font-bold text-slate-800">ترمیم کلاپس تیغه و افتادگی</div>
+<div class="text-[11px] text-slate-500 mt-1">بازسازی اسکلت با غضروف سپتوم خود بیمار</div>
+</div>
+</div>
+<div class="text-[11px] font-bold text-sand-800 mb-1">پرونده #۵۰۹ • جراحی ثانویه ترمیمی</div>
+<h4 class="text-sm font-bold text-slate-900 mb-2">ترمیم آسیب عمل پیشین و نجات تنفس</h4>
+<p class="text-xs text-slate-500 font-light leading-relaxed">
+              «پس از ۵ سال ترس از خفگی در خواب، حالا شب‌ها با دهان بسته و بی‌صدا نفس می‌کشم.»
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-100 text-[10px] text-sage-800 font-semibold">
+            بدون استفاده از مواد مصنوعی خارجی
+          </div>
+</div>
+<!-- Case 3 -->
+<div class="p-4 rounded-[2rem] bg-white border border-sage-100 shadow-sm flex flex-col justify-between">
+<div>
+<div class="aspect-[4/3.5] rounded-[1.6rem] bg-gradient-to-tr from-sand-100 via-sage-50 to-sand-200 mb-4 flex items-center justify-center p-6 text-center">
+<div>
+<span class="material-symbols-outlined text-4xl text-sand-800 mb-2">sentiment_satisfied</span>
+<div class="text-xs font-bold text-slate-800">بینی گوشتی و پوست ضخیم</div>
+<div class="text-[11px] text-slate-500 mt-1">تکنیک حفظ پوست و استحکام نوک بینی</div>
+</div>
+</div>
+<div class="text-[11px] font-bold text-emerald-800 mb-1">پرونده #۶۳۸ • فرم طبیعی مردانه</div>
+<h4 class="text-sm font-bold text-slate-900 mb-2">حفظ ابهت چهره بدون کوچک‌سازی افراطی</h4>
+<p class="text-xs text-slate-500 font-light leading-relaxed">
+              «زاویه لب و بینی به‌گونه‌ای تنظیم شد که تناسب مردانه چهره مخدوش نشود.»
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-100 text-[10px] text-emerald-800 font-semibold">
+            ماندگاری کامل فرم در گذر زمان
+          </div>
+</div>
+</div>
+</div>
+</main>
+<!-- IMMERSIVE CONSULTATION INVITATION CARD -->
+<section class="max-w-4xl mx-auto px-4 sm:px-6 mt-20" id="dialogue-stage">
+<div class="p-8 sm:p-12 rounded-[2.8rem] bg-white border border-sage-200/90 shadow-xl text-right relative overflow-hidden">
+<div class="text-center max-w-lg mx-auto mb-10">
+<span class="w-12 h-12 rounded-full bg-sage-50 text-sage-800 inline-flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-2xl">chat_bubble</span>
+</span>
+<h3 class="text-2xl sm:text-3xl font-black text-slate-900">
+          درخواست گفتگوی صمیمانه حضوری
+        </h3>
+<p class="text-slate-500 text-xs sm:text-sm mt-2 font-light leading-relaxed">
+          اطلاعات خود را بنویسید. دستیار بالینی دکتر طی ۲۴ ساعت در کمال آرامش با شما تماس خواهد گرفت تا مناسب‌ترین زمان را هماهنگ فرماید.
+        </p>
+</div>
+<form class="space-y-5" onsubmit="event.preventDefault(); alert('درخواست آرامش‌بخش شما دریافت شد. همکار بالینی دکتر زینالی برای هماهنگی نوبت با شما تماس خواهد گرفت.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-bold text-slate-700">نام و نام خانوادگی گرامی</label>
+<input class="px-4 py-3 rounded-2xl bg-surface border border-sage-200/80 text-sm focus:bg-white focus:border-sage-700 focus:ring-0 transition-all text-right" placeholder="مثال: نسیم رحیمی" required="" type="text">
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-bold text-slate-700">شماره موبایل جهت هماهنگی</label>
+<input class="px-4 py-3 rounded-2xl bg-surface border border-sage-200/80 text-sm focus:bg-white focus:border-sage-700 focus:ring-0 transition-all text-left" dir="ltr" placeholder="0912..." required="" type="tel">
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-bold text-slate-700">وضعیت سابقه جراحی بینی</label>
+<select class="px-4 py-3 rounded-2xl bg-surface border border-sage-200/80 text-sm focus:bg-white focus:border-sage-700 focus:ring-0 transition-all text-right">
+<option>عمل اول (تاکنون جراحی نشده‌ام)</option>
+<option>جراحی ترمیمی (سابقه جراحی قبلی ناموفق)</option>
+<option>مشکل اصلی انسداد تنفسی و انحراف سپتوم</option>
+</select>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-bold text-slate-700">شهر یا کشور محل سکونت</label>
+<input class="px-4 py-3 rounded-2xl bg-surface border border-sage-200/80 text-sm focus:bg-white focus:border-sage-700 focus:ring-0 transition-all text-right" placeholder="تهران / سایر شهرها / مقیم خارج" type="text">
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-bold text-slate-700">اصلی‌ترین نگرانی یا ترسی که تا امروز مانع تصمیم‌گیری شما شده؟</label>
+<textarea class="px-4 py-3 rounded-2xl bg-surface border border-sage-200/80 text-sm focus:bg-white focus:border-sage-700 focus:ring-0 transition-all text-right" placeholder="مثلاً: از تامپون می‌ترسم، نگرانم فرم بینی‌ام عروسکی شود، یا مشکل تنفسی دارم..." rows="3"></textarea>
+</div>
+<div class="p-3.5 rounded-2xl bg-sage-50 text-sage-900 text-xs flex items-center gap-2 border border-sage-200/60 font-light">
+<span class="material-symbols-outlined text-sage-700 text-lg shrink-0">lock</span>
+<span class="">اطلاعات شما نزد پزشک کاملاً محفوظ و امانت است؛ بدون هیچ‌گونه اصرار به عمل.</span>
+</div>
+<button class="w-full py-4 rounded-full bg-sage-800 hover:bg-sage-900 text-white font-bold text-sm shadow-md hover:shadow-xl transition-all flex items-center justify-center gap-2" type="submit">
+<span class="">ثبت تمایل به گفتگوی حضوری</span>
+<span class="material-symbols-outlined text-base">arrow_back</span>
+</button>
+</form>
+</div>
+</section>
+<!-- ULTRA-PRESTIGE FIXED BOTTOM DOCK BAR (CTA REDESIGN) -->
+<aside class="fixed bottom-4 inset-x-4 sm:inset-x-6 z-50 pointer-events-none">
+<div class="max-w-4xl mx-auto h-16 rounded-full glass-dock border border-sage-300/70 px-4 sm:px-6 flex items-center justify-between shadow-2xl pointer-events-auto">
+<!-- Doctor Mini Profile Status -->
+<div class="flex items-center gap-3">
+<div class="relative w-10 h-10 rounded-full overflow-hidden border border-sage-300 shrink-0">
+<img alt="دکتر وحید زینالی" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANAoMi6zMug1TwFBZZgHhWJdP3aweCQijvaaPEb-c-jjrfWiqRb4zncZxQRlIgJaPU6lXXxjRqz_vlxtyxRlkydwfwFuzhLbbgqP9J5Oeea_5tOO-DcUTWm2usyKHkjw-JgdLgvcZP3hpEQe-3U3K1a7TvNv81ax_v-iE2Lx57GBFasHN-wZdrYfmUji0Dw3UZKVAc4svh9o60QGFF7-JcAKevR60i-FyQzQIue5Qq_5ZsHMYWF-s3UZGCyhviBUKI">
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 border border-white"></span>
+</div>
+<div class="hidden sm:flex flex-col text-right">
+<span class="text-xs font-bold text-slate-900">مشاوره با دکتر وحید زینالی</span>
+<span class="text-[10px] text-sage-700 font-medium">پاسخگویی سریع توسط دستیار ارشد بالینی</span>
+</div>
+</div>
+<!-- Quick Action Group -->
+<div class="flex items-center gap-2.5">
+<a class="hidden md:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-xs font-bold text-slate-700 bg-sand-100 hover:bg-sand-200 transition-colors" dir="ltr" href="tel:+982188000000">
+<span class="material-symbols-outlined text-[15px] text-sage-800">call</span>
+<span class="">+98 21 8800 0000</span>
+</a>
+<a class="px-5 py-2.5 rounded-full bg-sage-800 hover:bg-sage-900 text-white text-xs font-bold shadow-md hover:shadow-lg transition-all flex items-center gap-1.5" href="#dialogue-stage">
+<span class="material-symbols-outlined text-[16px]">spa</span>
+<span class="">درخواست گفتگوی بدون استرس</span>
+</a>
+</div>
+</div>
+</aside>
+<!-- FOOTER -->
+<footer class="mt-24 pt-12 pb-16 bg-[#0D4744] text-white/80 text-xs text-right border-t border-sage-900">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+<div>
+<span class="font-bold text-white text-base block">مطب دکتر وحید زینالی</span>
+<span class="text-white/60 text-[11px] mt-0.5 block font-light">تهران، ولیعصر، بالاتر از توانیر، ساختمان پزشکان شماره یک</span>
+</div>
+<div class="flex items-center gap-6 text-[11px] text-white/70">
+<a class="hover:text-white transition-colors" href="#canvas" onclick="switchStage('anxieties')">دغدغه‌های بیمار</a>
+<a class="hover:text-white transition-colors" href="#canvas" onclick="switchStage('journey')">مسیر درمان</a>
+<a class="hover:text-white transition-colors" href="#canvas" onclick="switchStage('sanctuary')">محیط کلینیک</a>
+<a class="hover:text-white transition-colors" href="#dialogue-stage">هماهنگی نوبت</a>
+</div>
+</div>
+<div class="max-w-6xl mx-auto px-4 sm:px-6 mt-6 pt-6 border-t border-white/10 text-center md:text-right text-[10px] text-white/50">
+      طبابت با تعهد به کرامت انسانی و صیانت از عملکرد تنفسی مراجعین. طراحی نسخه ارگانیک و آرامش‌بخش بالینی.
+    </div>
+</footer>
+<!-- SCRIPT FOR SINGLE PAGE STAGE SWITCHING -->
+<script>
+    function switchStage(stageName) {
+      // Hide all contents
+      const contents = document.querySelectorAll('.tab-content');
+      contents.forEach(content => {
+        content.classList.remove('active');
+      });
+
+      // Show targeted content
+      const targetContent = document.getElementById('view-' + stageName);
+      if (targetContent) {
+        targetContent.classList.add('active');
+      }
+
+      // Update button pill states
+      const buttons = document.querySelectorAll('.stage-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('pill-active');
+        btn.classList.add('text-slate-600', 'hover:bg-sage-50');
+      });
+
+      const activeBtn = document.getElementById('btn-' + stageName);
+      if (activeBtn) {
+        activeBtn.classList.add('pill-active');
+        activeBtn.classList.remove('text-slate-600', 'hover:bg-sage-50');
+      }
+    }
+  </script>
+
+
+</body></html>
