@@ -7,8 +7,13 @@ import {defineConfig} from 'vite';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+const repoName = process.env.GITHUB_REPOSITORY ? process.env.GITHUB_REPOSITORY.split('/')[1] : '';
+const isUserSite = repoName.toLowerCase().endsWith('.github.io');
+const basePath = repoName ? (isUserSite ? '/' : `/${repoName}/`) : './';
+
 export default defineConfig(() => {
   return {
+    base: basePath,
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {

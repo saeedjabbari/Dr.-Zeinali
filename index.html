@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function() {
+        if (location.hostname.endsWith('github.io')) {
+          var p = location.pathname;
+          if (p && !p.endsWith('/') && !p.includes('.')) {
+            location.replace(p + '/' + location.search + location.hash);
+          }
+        }
+      })();
+    </script>
     <title>دکتر وحید زینالی | رینوپلاستی محافظتی و چهره اصیل</title>
     <meta name="description" content="پایگاه رسمی دکتر وحید زینالی، استادیار دانشگاه و جراح متخصص گوش، حلق و بینی. پیشگام رینوپلاستی محافظتی و جراحی بینی بدون تامپون با حفظ سلامت تنفس." />
     <meta name="keywords" content="دکتر وحید زینالی, رینوپلاستی محافظتی, جراحی بینی تهران, عمل بینی بدون تامپون, جراح بینی جردن, پیزوسرجری بینی, متخصص گوش حلق بینی" />
