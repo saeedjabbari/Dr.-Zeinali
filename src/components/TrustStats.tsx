@@ -30,26 +30,26 @@ export const TrustStats: React.FC = () => {
   ];
 
   return (
-    <section className="bg-[#0B132B] text-white py-12 px-4 sm:px-8 border-y border-[#C5A880]/20">
+    <section className="bg-[#0B132B] text-white py-6 sm:py-12 px-3 sm:px-8 border-y border-[#C5A880]/20">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-6">
           {stats.map((item, index) => {
             const Icon = item.icon;
             return (
               <div 
                 key={index} 
-                className="flex flex-col text-right p-6 rounded-3xl bg-[#1C2541]/40 border border-[#C5A880]/20 hover:border-[#C5A880]/60 transition-colors shadow-sm"
+                className="flex flex-col text-right p-3.5 sm:p-6 rounded-2xl sm:rounded-3xl bg-[#1C2541]/40 border border-[#C5A880]/20 hover:border-[#C5A880]/60 transition-colors shadow-sm"
               >
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="w-11 h-11 rounded-2xl bg-[#1C2541] border border-[#C5A880]/40 flex items-center justify-center text-[#C5A880] shadow-sm">
-                    <Icon className="w-5 h-5" />
+                <div className="flex items-center gap-2 sm:gap-3 mb-1.5 sm:mb-2">
+                  <span className="w-8 h-8 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl bg-[#1C2541] border border-[#C5A880]/40 flex items-center justify-center text-[#C5A880] shadow-sm shrink-0">
+                    <Icon className="w-4 h-4 sm:w-5 sm:h-5" />
                   </span>
-                  <span className="text-3xl lg:text-4xl font-black text-white tracking-tight">
+                  <span className="text-lg sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
                     {item.metric}
                   </span>
                 </div>
-                <h3 className="text-sm font-bold text-[#C5A880] mt-1">{item.title}</h3>
-                <p className="text-xs text-slate-400 font-normal mt-1 leading-relaxed">{item.desc}</p>
+                <h3 className="text-xs sm:text-sm font-bold text-[#C5A880] mt-0.5 sm:mt-1 leading-snug">{item.title}</h3>
+                <p className="text-[11px] sm:text-xs text-slate-400 font-normal mt-1 leading-relaxed">{item.desc}</p>
               </div>
             );
           })}
