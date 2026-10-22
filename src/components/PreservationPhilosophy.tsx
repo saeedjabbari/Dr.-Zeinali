@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Check, X, Shield, Cpu, Wind } from 'lucide-react';
+import piezoImg from '../assets/images/surgical_piezo_technology_1792647499977.jpg';
 
 export const PreservationPhilosophy: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'preservation' | 'piezo' | 'tamponless'>('preservation');
@@ -146,7 +147,7 @@ export const PreservationPhilosophy: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center text-right">
             <div className="lg:col-span-6 rounded-3xl overflow-hidden border border-[#0B132B]/10 shadow-xl">
               <img
-                src="/src/assets/images/surgical_piezo_technology_1792647499977.jpg"
+                src={piezoImg}
                 alt="تجهیزات پیزوسرجری اولتراسونیک کلینیک دکتر زینالی"
                 className="w-full aspect-[4/3] object-cover"
                 loading="lazy"

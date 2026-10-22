@@ -1,5 +1,7 @@
 import React from 'react';
 import { ArrowLeft, Clock, ShieldCheck, Wind, MapPin } from 'lucide-react';
+import doctorPhoto from '../assets/images/doctor_portrait.jpg';
+import clinicInterior from '../assets/images/clinic_sanctuary_interior_1792647499641.jpg';
 
 interface HeroProps {
   onBookClick: () => void;
@@ -107,7 +109,7 @@ export const Hero: React.FC<HeroProps> = ({ onBookClick, onAssessmentClick }) =>
               {/* Main Photo Frame */}
               <div className="relative w-full aspect-[4/4.8] rounded-2xl overflow-hidden bg-[#0B132B]">
                 <img
-                  src="/assets/aistudio/photo_2025-10-21_01-49-55_dc82e9fe.jpg"
+                  src={doctorPhoto}
                   alt="دکتر وحید زینالی - جراح متخصص گوش، حلق و بینی و سر و گردن"
                   className="w-full h-full object-cover object-top group-hover:scale-102 transition-transform duration-700"
                   loading="eager"
@@ -142,7 +144,7 @@ export const Hero: React.FC<HeroProps> = ({ onBookClick, onAssessmentClick }) =>
               <div className="mt-4 p-3.5 rounded-2xl bg-[#F8F9FA] border border-[#E2E8F0] flex items-center gap-3.5 text-right hover:bg-white transition-colors">
                 <div className="w-16 h-16 rounded-xl overflow-hidden shrink-0 border border-slate-200">
                   <img
-                    src="/src/assets/images/clinic_sanctuary_interior_1792647499641.jpg"
+                    src={clinicInterior}
                     alt="فضای کلینیک آرام دکتر زینالی"
                     className="w-full h-full object-cover"
                     loading="lazy"

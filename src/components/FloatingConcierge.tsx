@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, Calendar } from 'lucide-react';
+import doctorPhoto from '../assets/images/doctor_portrait.jpg';
 
 interface FloatingConciergeProps {
   onBookClick: () => void;
@@ -14,7 +15,7 @@ export const FloatingConcierge: React.FC<FloatingConciergeProps> = ({ onBookClic
         <div className="flex items-center gap-3">
           <div className="relative w-9 h-9 rounded-xl overflow-hidden border border-[#C5A880] shrink-0 bg-[#0B132B] shadow-sm">
             <img
-              src="/assets/aistudio/photo_2025-10-21_01-49-55_dc82e9fe.jpg"
+              src={doctorPhoto}
               alt="دکتر وحید زینالی"
               className="w-full h-full object-cover object-top"
               loading="lazy"

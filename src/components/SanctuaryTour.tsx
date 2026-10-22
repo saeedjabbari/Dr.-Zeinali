@@ -1,5 +1,6 @@
 import React from 'react';
 import { Sparkles, MapPin, Coffee, Car, Lock } from 'lucide-react';
+import sanctuaryImg from '../assets/images/clinic_sanctuary_interior_1792647499641.jpg';
 
 export const SanctuaryTour: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ export const SanctuaryTour: React.FC = () => {
           <div className="lg:col-span-7">
             <div className="relative rounded-3xl overflow-hidden border border-[#0B132B]/10 shadow-2xl group">
               <img
-                src="/src/assets/images/clinic_sanctuary_interior_1792647499641.jpg"
+                src={sanctuaryImg}
                 alt="فضای مشاوره اختصاصی کلینیک دکتر زینالی با نور طبیعی و چوب راش"
                 className="w-full aspect-[16/10] object-cover group-hover:scale-102 transition-transform duration-700"
                 loading="lazy"

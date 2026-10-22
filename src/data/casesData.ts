@@ -1,4 +1,10 @@
 import { CaseStudy } from '../types';
+import case1Before from '../assets/images/rhinoplasty_before_case1_1792648519452.jpg';
+import case1After from '../assets/images/rhinoplasty_after_case1_1792648518373.jpg';
+import maleBefore from '../assets/images/rhinoplasty_before_male_1792648519868.jpg';
+import maleAfter from '../assets/images/rhinoplasty_after_male_1792648519210.jpg';
+import septumBefore from '../assets/images/septum_before_case509_1792660619191.jpg';
+import septumAfter from '../assets/images/septum_after_case509_1792660619329.jpg';
 
 export const CASE_STUDIES: CaseStudy[] = [
   {
@@ -8,8 +14,8 @@ export const CASE_STUDIES: CaseStudy[] = [
     categoryLabel: 'رینوپلاستی محافظتی (Preservation)',
     patientAge: '۲۸ سال',
     timeframe: '۲ سال پس از جراحی',
-    beforeImage: '/src/assets/images/rhinoplasty_before_case1_1792648519452.jpg',
-    afterImage: '/src/assets/images/rhinoplasty_after_case1_1792648518373.jpg',
+    beforeImage: case1Before,
+    afterImage: case1After,
     technique: 'پیزوسرجری اولتراسونیک، حفظ پل بینی طبیعی، بدون تامپون',
     quote: '«بزرگترین دغدغه من حفظ تقارن طبیعی چهره بود تا در نگاه اول مشخص نشود عمل کرده‌ام. همچنین تنفسم از قبل بسیار آزادتر شده است.»',
     breathingScore: '+۹۵٪ بهبود جریان هوا',
@@ -28,8 +34,8 @@ export const CASE_STUDIES: CaseStudy[] = [
     categoryLabel: 'فرم طبیعی مردانه و اصلاح قوز',
     patientAge: '۳۱ سال',
     timeframe: '۱۸ ماه پس از جراحی',
-    beforeImage: '/src/assets/images/rhinoplasty_before_male_1792648519868.jpg',
-    afterImage: '/src/assets/images/rhinoplasty_after_male_1792648519210.jpg',
+    beforeImage: maleBefore,
+    afterImage: maleAfter,
     technique: 'تراش خطی استخوان با امواج فراصوت، تثبیت پایه‌های کلوملا، بدون تامپون',
     quote: '«مهم‌ترین شرط من حفظ فرم مردانه و پرهیز از قوس فانتزی بود. دقیقاً خط مستقیم و پرابهتی که مد نظرم بود حاصل شد.»',
     breathingScore: '+۹۸٪ رفع مقاومت تنفسی',
@@ -47,8 +53,8 @@ export const CASE_STUDIES: CaseStudy[] = [
     categoryLabel: 'اصلاح انحراف سپتوم و بازسازی تنفس',
     patientAge: '۲۹ سال',
     timeframe: '۱۲ ماه پس از جراحی',
-    beforeImage: '/src/assets/images/septum_before_case509_1792660619191.jpg',
-    afterImage: '/src/assets/images/septum_after_case509_1792660619329.jpg',
+    beforeImage: septumBefore,
+    afterImage: septumAfter,
     technique: 'سپتوپلاستی ساختاری، اصلاح کجی محور استخوانی و باز کردن دریچه داخلی',
     quote: '«علاوه بر انحراف ظاهری، سال‌ها تنفس یک‌طرفه شدید داشتم. دکتر زینالی تقارن کامل محور بینی و تنفس آزاد را همزمان احیا کردند.»',
     breathingScore: '+۹۶٪ ظرفیت حجم ریوی و رفع کامل انسداد',
